@@ -9,7 +9,6 @@ function calculatePercentages(revenueByState) {
     return percentages;
 }
 
-// Monthly revenue by state
 const monthlyRevenue = {
     SP: 67836.43,
     RJ: 36678.66,
@@ -18,7 +17,6 @@ const monthlyRevenue = {
     Others: 19849.53
 };
 
-// Calculate and display percentages
 const percentages = calculatePercentages(monthlyRevenue);
 for (const [state, percentage] of Object.entries(percentages)) {
     console.log(`${state}: ${percentage}%`);
